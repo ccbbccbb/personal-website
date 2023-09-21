@@ -1,0 +1,83 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.4rem;
+    background: linear-gradient(-35deg, #f2f3f2, #dedede, #c9cac9, #a0a1a0);
+    background-size: 350% 350%;
+    animation: gradient 7s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.main-content-container {
+    width: 100%;
+    color: #0078ef;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 42px;
+}
+
+.container-left {
+    width: 40%;
+    text-align: left;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 42px 42px 0;
+}
+
+.container-centre {
+    width: 35%;
+    text-align: left;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 42px 42px 0;
+}
+
+.container-right {
+    width: 20%;
+    text-align: left;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 42px 42px 0;
+}
+
+.header {
+    color: #000c17;
+}
+
+a, a:link, a:active, a:visited { 
+    color: #000c17;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0078ef;
+    transition: color 0.77s ease;
+}
+
+@media screen and (max-width: 1190px) {
+
+    .main-content-container {
+        padding: 21px;
+    }
+
+    .container-left, .container-centre, .container-right {
+        width: 100%;
+        padding: 21px;
+    }
+}
